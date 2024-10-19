@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from 'react-router-dom';
+// Import necessary page components
+import MainLayout from './layouts/MainLayout';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
+import NewsPage from './pages/NewsPage';
+import RegionsPage from './pages/RegionsPage';
+import NotFoundPage from './pages/NotFoundPage';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+/**
+ * Define the application routes.
+ *
+ * This code sets up the routing configuration for this React app using the `react-router-dom` library.
+ * It defines the main routes for our application, including the homepage, contact page, news page, regions page,
+ * and a catch-all route for any unknown URLs that will redirect to the not found page.
+ */
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout />}>
+      <Route index element={<HomePage />} />
+      <Route path='/contact' element={<ContactPage />} />
+      <Route path='/news' element={<NewsPage />} />
+      <Route path='/regions' element={<RegionsPage />} />
+      <Route path='*' element={<NotFoundPage />} />
+    </Route>
   )
-}
+);
 
-export default App
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+export default App;
