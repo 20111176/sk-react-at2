@@ -11,6 +11,10 @@ import ContactPage from './pages/ContactPage';
 import NewsPage from './pages/NewsPage';
 import RegionsPage from './pages/RegionsPage';
 import NotFoundPage from './pages/NotFoundPage';
+import TestPage from './pages/TestPage';
+import TestFooter from './pages/TestFooter';
+import TestCardArticles from './pages/TestCardArticles';
+import TestHeader from './pages/TestHeader';
 
 /**
  * Define the application routes.
@@ -23,7 +27,11 @@ import NotFoundPage from './pages/NotFoundPage';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/sk-react-at2/' element={<MainLayout />}>
-      <Route path='/sk-react-at2/' element={<HomePage />} />
+      <Route path='/sk-react-at2/' element={<TestPage />} />
+      <Route path='/sk-react-at2/testcard' element={<TestCardArticles />} />
+      <Route path='/sk-react-at2/testfooter' element={<TestFooter />} />
+      <Route path='/sk-react-at2/testheader' element={<TestHeader />} />
+      <Route path='/sk-react-at2/home' element={<HomePage />} />
       <Route path='/sk-react-at2/contact' element={<ContactPage />} />
       <Route path='/sk-react-at2/news' element={<NewsPage />} />
       <Route path='/sk-react-at2/regions' element={<RegionsPage />} />
