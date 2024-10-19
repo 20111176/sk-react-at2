@@ -1,5 +1,6 @@
 // This is the footer section, which will be used across all pages to be added at the end.
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 const Footer = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Footer = () => {
           <div className='row'>
             <div className='block col-sm-3'>
               <Link to='#'>
-                <img src='src/assets/images/logo.png' alt='One Ring Rentals' />
+                <img src={logo} alt='One Ring Rentals' />
               </Link>
               <br />
               <br />
