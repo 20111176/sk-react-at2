@@ -10,7 +10,7 @@
 
 [back](#index)
 
-In this assessment I used react with vite.
+In this assessment, I used React with Vite.
 
 ## Working evidences
 
@@ -19,25 +19,31 @@ In this assessment I used react with vite.
 - Custom Components  
   ![Custom components](Screenshots/image-1.png)
 
-- Each HTML page in the site, become a React components  
+- Each HTML page in the site becomes a reusable React component.
+
   ![each html page into react components](Screenshots/image.png)
 
-- Components thorough chrome react extension  
+- Components thoroughly covered in Chrome React Extension
   ![chrome extention](Screenshots/image-2.png)
 
-- Re use example  
+- Reuse example  
   ![re use components example](Screenshots/image-3.png)
 
 - Each component
   ![Recent Articles](Screenshots/image-4.png)
 
-- Re use footer components
+- Reuse footer components
   ![footer](Screenshots/image-5.png)
 
-- Re use header components
+- Reuse header components
   ![header](Screenshots/image-6.png)
 
 ## Bug & Issues
 
 [back](#index)
-1. 
+
+1. Media Query Issue
+   When switching from full screen to mobile screen, navigation links are not displayed when clicking the hamburger button. This functionality worked on static pages but stopped working after breaking down into smaller components.
+
+2. Advanced Search Page CSS Error
+   There are two missing styles. This feature was working on single static pages but is not functioning properly after splitting into small components.
