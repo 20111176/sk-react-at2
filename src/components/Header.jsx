@@ -65,7 +65,7 @@ const Header = () => {
           <div className='container'>
             <div className='row'>
               <div className='col-sm-12'>
-                <Link to='/' className='nav-logo'>
+                <Link to='/sk-react-at2/' className='nav-logo'>
                   <img src={logo} alt='One Ring Rentals' />
                 </Link>
                 {/* <!-- BEGIN SEARCH --> */}
@@ -96,7 +96,7 @@ const Header = () => {
 
                   <ul className='nav navbar-nav is-active'>
                     <li>
-                      <Link to='/'>Find a Rental</Link>
+                      <Link to='/sk-react-at2/'>Find a Rental</Link>
                     </li>
                     <li>
                       <Link to='#'>List your rental</Link>
@@ -105,13 +105,13 @@ const Header = () => {
                       <Link to='#'>Travel Guides</Link>
                     </li>
                     <li>
-                      <Link to='/regions'>Regions</Link>
+                      <Link to='/sk-react-at2/regions'>Regions</Link>
                     </li>
                     <li>
-                      <Link to='/news'>News</Link>
+                      <Link to='/sk-react-at2/news'>News</Link>
                     </li>
                     <li>
-                      <Link to='contact'>Contact</Link>
+                      <Link to='/sk-react-at2/contact'>Contact</Link>
                     </li>
                   </ul>
                 </nav>

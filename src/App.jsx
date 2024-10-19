@@ -19,14 +19,15 @@ import NotFoundPage from './pages/NotFoundPage';
  * It defines the main routes for our application, including the homepage, contact page, news page, regions page,
  * and a catch-all route for any unknown URLs that will redirect to the not found page.
  */
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<MainLayout />}>
-      <Route index element={<HomePage />} />
-      <Route path='/contact' element={<ContactPage />} />
-      <Route path='/news' element={<NewsPage />} />
-      <Route path='/regions' element={<RegionsPage />} />
-      <Route path='*' element={<NotFoundPage />} />
+    <Route path='/sk-react-at2/' element={<MainLayout />}>
+      <Route path='/sk-react-at2/' element={<HomePage />} />
+      <Route path='/sk-react-at2/contact' element={<ContactPage />} />
+      <Route path='/sk-react-at2/news' element={<NewsPage />} />
+      <Route path='/sk-react-at2/regions' element={<RegionsPage />} />
+      <Route path='/sk-react-at2/*' element={<NotFoundPage />} />
     </Route>
   )
 );
