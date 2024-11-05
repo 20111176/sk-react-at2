@@ -41,6 +41,9 @@ In this assessment, I used React with Vite.
 - Reuse components for News Page
   ![News Page](Screenshots/image-7.png)
 
+- Reuse components for Regions Page
+  ![Regions Page](Screenshots/image-8.png)
+
 ## Bug & Issues
 
 [back](#index)

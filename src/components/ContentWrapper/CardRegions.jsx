@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CardRegion from './CardRegion';
 
 const regionsData = [
@@ -19,17 +20,36 @@ const regionsData = [
   {
     region: 'Arnor',
   },
+  {
+    region: 'Sydney',
+  },
+  {
+    region: 'Melbourne',
+  },
+  {
+    region: 'Hobart',
+  },
+  {
+    region: 'Adelaide',
+  },
+  {
+    region: 'Brisbane',
+  },
+  {
+    region: 'Perth',
+  },
 ];
 
-const CardRegions = () => {
+const CardRegions = (props) => {
   return (
     <>
       <div className='row'>
+        {/* <div className='col-sm-12'> */}
         <div className='col-sm-12'>
-          <h1 className='section-title'>Popular Regions</h1>
+          <h1 className='section-title'>{props.title}</h1>
           <div id='regions'>
-            {regionsData.map((Region, index) => (
-              <CardRegion key={index} {...Region} />
+            {regionsData.slice(0, props.limit).map((Region, index) => (
+              <CardRegion img={props.img} key={index} {...Region} />
             ))}
           </div>
         </div>

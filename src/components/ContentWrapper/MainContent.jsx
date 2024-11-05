@@ -33,7 +33,11 @@ const MainContent = () => {
       {/* <!-- BEGIN MAIN CONTENT --> */}
       <div className='main col-sm-8'>
         <CardProperties />
-        <CardRegions />
+        <CardRegions
+          limit='6'
+          title='POPULAR REGIONS'
+          img='https://placehold.co/194x194'
+        />
         <CardArticles title='Recent Articles' data={articlesData} />
 
         <div className='center'>
