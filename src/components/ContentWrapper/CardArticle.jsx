@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 const CardArticle = ({
   img = 'http://placehold.it/766x515',
+  author = 'Admin',
   date = 'Jan 01 1999',
   comments = 'No comments',
   tags = 'No tags',
@@ -31,6 +32,9 @@ const CardArticle = ({
           </li>
           <li>
             <i className='fa fa-tags'></i> {tags}
+          </li>
+          <li>
+            <i className='fa fa-user'></i> {author}
           </li>
         </ul>
         <h3>

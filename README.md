@@ -38,6 +38,9 @@ In this assessment, I used React with Vite.
 - Reuse header components
   ![header](Screenshots/image-6.png)
 
+- Reuse components for News Page
+  ![News Page](Screenshots/image-7.png)
+
 ## Bug & Issues
 
 [back](#index)
