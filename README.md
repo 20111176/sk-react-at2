@@ -2,9 +2,17 @@
 
 ## Index
 
+- [Version](#version)
 - [Develop the "One RIng Rentals"](#develop-the-one-ring-rentals-site-use-react)
 - [Working evidences](#working-evidences)
 - [Bug $ Issues](#bug--issues)
+
+## Version
+
+[back](#index)
+
+- v1.1: Updated news and regions pages reusing components to display.
+  - updated screenshots below
 
 ## Develop the "One Ring Rentals" site use React
 
